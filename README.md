@@ -1,0 +1,1 @@
+A simple Flask-based web application for accessing and managing Cambridge International A-Level Geography past papers and mark schemes. This tool allows users to view question papers and toggle their corresponding mark schemes in an intuitive interface.
