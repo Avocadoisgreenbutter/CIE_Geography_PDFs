@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ folder }}</title>
+</head>
+<body>
+    <h1>{{ folder }}</h1>
+    <h2>Question Papers</h2>
+    <ul>
+        {% for pdf in question_pdfs %}
+        <li>
+            <a href="/viewer/{{ folder }}/{{ pdf }}/{{ pdf.replace('Question', 'MS') }}">{{ pdf }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
+
+
+
+

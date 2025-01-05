@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ question }}</title>
+    <script>
+        function toggleMS() {
+            var msFrame = document.getElementById('msFrame');
+            msFrame.style.display = (msFrame.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>{{ question }}</h1>
+    <iframe src="/pdf/{{ folder }}/{{ question }}" width="600" height="800"></iframe>
+    <button onclick="toggleMS()">Toggle Mark Scheme</button>
+    <iframe id="msFrame" src="/pdf/{{ folder }}/{{ ms }}" width="600" height="800" style="display:none;"></iframe>
+    <br>
+    <a href="/view/{{ folder }}">Back to {{ folder }}</a>
+</body>
+</html>
+

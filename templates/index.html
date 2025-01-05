@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIE Geography Tool</title>
+</head>
+<body>
+    <h1>Select a Paper</h1>
+    <ul>
+        {% for folder in folders %}
+        <li><a href="/view/{{ folder }}">{{ folder }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
